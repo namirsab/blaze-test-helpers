@@ -27,6 +27,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('blaze-test-helpers');
+  api.use('planefy:blaze-test-helpers');
   api.mainModule('blaze-test-helpers-tests.js');
 });

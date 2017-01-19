@@ -2,6 +2,7 @@ import { _ } from 'meteor/underscore';
 import { Template } from 'meteor/templating';
 import { Blaze } from 'meteor/blaze';
 import { Tracker } from 'meteor/tracker';
+import { mockTemplate, restoreTemplate } from './mock-templates.js';
 
 const withDiv = function withDiv(callback) {
   const el = document.createElement('div');
@@ -20,4 +21,9 @@ export const withRenderedTemplate = function withRenderedTemplate(template, data
     Tracker.flush();
     callback(el);
   });
+};
+
+export {
+  mockTemplate,
+  restoreTemplate
 };

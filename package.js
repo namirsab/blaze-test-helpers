@@ -1,6 +1,6 @@
 Package.describe({
   name: 'planefy:blaze-test-helpers',
-  version: '0.0.2',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
   summary: 'Test Blaze templates',
   // URL to the Git repository containing the source code for this package.
